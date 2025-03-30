@@ -14,9 +14,9 @@ export default async function Home() {
 
   let bannerData = await getData("get_banner");
   bannerData = bannerData.banner[0];
-  bannerData.base64 = (await getPlaceholderImage(bannerData.banner_link)).base64;
-  
-  return (
-    <HomeSections blocksData={blocksData} bannerData={bannerData} />
-  );
+  bannerData.base64 = (
+    await getPlaceholderImage(bannerData.banner_link)
+  ).base64;
+
+  return <HomeSections blocksData={blocksData} bannerData={bannerData} />;
 }

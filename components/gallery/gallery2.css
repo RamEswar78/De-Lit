@@ -33,7 +33,7 @@
 
 /* Hover Effect */
 .gallery .pics img:hover {
-  transform: rotate3d(1, 2, 0, 25deg);
+  transform: scale(1.1);
 }
 
 /* Fade-In Animation for Gallery */
